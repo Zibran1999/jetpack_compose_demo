@@ -82,4 +82,12 @@ dependencies {
 
 // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+
+    // Material core
+    implementation "com.maxkeppeler.sheets-compose-dialogs:core:1.1.0"
+    // CALENDAR
+    implementation "com.maxkeppeler.sheets-compose-dialogs:calendar:1.1.0"
+
+    // CLOCK
+    implementation "com.maxkeppeler.sheets-compose-dialogs:clock:1.1.0"
 }
