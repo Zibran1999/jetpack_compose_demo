@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JetpackComposeDemo</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_coroutine_flow">CoroutineFlowActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_note">NoteActivity</string>
 </resources>
