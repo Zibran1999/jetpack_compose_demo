@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.ViewModelProvider
-import com.zibran.jetpackcomposedemo.coroutineflow.ui.theme.JetpackComposeDemoTheme
+import com.zibran.jetpackcomposedemo.ui.theme.JetpackComposeDemoTheme
 import com.zibran.jetpackcomposedemo.viewModel.FlowViewModel
 
 class CoroutineFlowActivity : ComponentActivity() {

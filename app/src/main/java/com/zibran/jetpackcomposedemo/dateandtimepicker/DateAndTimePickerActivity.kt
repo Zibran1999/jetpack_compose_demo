@@ -18,7 +18,7 @@ import com.maxkeppeler.sheets.calendar.models.CalendarSelection
 import com.maxkeppeler.sheets.clock.ClockDialog
 import com.maxkeppeler.sheets.clock.models.ClockConfig
 import com.maxkeppeler.sheets.clock.models.ClockSelection
-import com.zibran.jetpackcomposedemo.coroutineflow.ui.theme.JetpackComposeDemoTheme
+import com.zibran.jetpackcomposedemo.ui.theme.JetpackComposeDemoTheme
 
 class DateAndTimePickerActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

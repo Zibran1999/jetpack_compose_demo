@@ -13,6 +13,31 @@
         android:theme="@style/Theme.JetpackComposeDemo"
         tools:targetApi="31">
         <activity
+            android:name=".navigation.NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.JetpackComposeDemo" />
+        <activity
+            android:name=".timer.TimerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_timer"
+            android:theme="@style/Theme.JetpackComposeDemo" />
+        <activity
+            android:name=".instagramprofile.InstaProfileUIActivity"
+            android:exported="false"
+            android:label="@string/title_activity_insta_profile_uiactivity"
+            android:theme="@style/Theme.JetpackComposeDemo" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.JetpackComposeDemo" />
+        <activity
+            android:name=".disabilitytracker.DisabilityTrackerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.JetpackComposeDemo" />
+        <activity
             android:name=".dateandtimepicker.DateAndTimePickerActivity"
             android:exported="false"
             android:label="@string/title_activity_date_and_time_picker"
@@ -20,7 +45,7 @@
         <activity
             android:name=".notesapp.ui.NoteActivity"
             android:exported="true"
-            android:theme="@style/Theme.JetpackComposeDemo"/>
+            android:theme="@style/Theme.JetpackComposeDemo" />
         <activity
             android:name=".MainActivity2"
             android:exported="true"

@@ -11,7 +11,6 @@ import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -19,11 +18,9 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.ExperimentalTextApi
@@ -40,7 +37,7 @@ import androidx.lifecycle.lifecycleScope
 import com.zibran.jetpackcomposedemo.R
 import com.zibran.jetpackcomposedemo.notesapp.data.Notes
 import com.zibran.jetpackcomposedemo.notesapp.model.NoteViewModel
-import com.zibran.jetpackcomposedemo.notesapp.ui.ui.theme.JetpackComposeDemoTheme
+import com.zibran.jetpackcomposedemo.ui.theme.JetpackComposeDemoTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -156,33 +153,34 @@ class NoteActivity : ComponentActivity() {
 
                             ) {
                                 Row() {
-                                    val rainbowColorsBrush = remember {
-                                        Brush.sweepGradient(
-                                            listOf(
-                                                Color(0xFF9575CD),
-                                                Color(0xFFBA68C8),
-                                                Color(0xFFE57373),
-                                                Color(0xFFFFB74D),
-                                                Color(0xFFFFF176),
-                                                Color(0xFFAED581),
-                                                Color(0xFF4DD0E1),
-                                                Color(0xFF9575CD)
-                                            )
-                                        )
-                                    }
-                                    Image(
-                                        painter = painterResource(id = R.drawable.anatomy),
-                                        contentDescription = null,
-                                        contentScale = ContentScale.Crop,
-                                        modifier = Modifier
-                                            .size(100.dp)
-                                            .clip(CircleShape)
-                                            .border(
-                                                BorderStroke(4.dp, rainbowColorsBrush),
-                                                CircleShape
-                                            )
-                                            .padding(4.dp)
-                                    )
+//                                    val rainbowColorsBrush = remember {
+//                                        Brush.sweepGradient(
+//                                            listOf(
+//                                                Color(0xFF9575CD),
+//                                                Color(0xFFBA68C8),
+//                                                Color(0xFFE57373),
+//                                                Color(0xFFFFB74D),
+//                                                Color(0xFFFFF176),
+//                                                Color(0xFFAED581),
+//                                                Color(0xFF4DD0E1),
+//                                                Color(0xFF9575CD)
+//                                            )
+//                                        )
+//                                    }
+//                                    Image(
+//                                        painter = painterResource(id = R.drawable.anatomy),
+//                                        contentDescription = null,
+//                                        contentScale = ContentScale.Crop,
+//                                        modifier = Modifier
+//                                            .size(100.dp)
+//                                            .clip(CircleShape)
+//                                            .border(
+//                                                BorderStroke(4.dp, rainbowColorsBrush),
+//                                                CircleShape
+//                                            )
+//                                            .padding(4.dp)
+//                                    )
+
                                     Column {
                                         Text(
                                             text = note.noteTitle,
